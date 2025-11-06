@@ -11,5 +11,4 @@ However, **they remain the exclusive intellectual property of Evutzy.**
 
 ---
 
-© 2025 Evutzy. All rights reserved.  
-For permissions or inquiries, please contact **contact@evutzy.com**.
+© 2025 Evutzy. All rights reserved. (www.evutzy.com)
