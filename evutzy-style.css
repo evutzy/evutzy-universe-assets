@@ -36,7 +36,7 @@
       -webkit-text-fill-color: transparent;
    }
 
-   button {
+   .button {
       background: linear-gradient(90deg, #c4637e, #ff9467, #ffd36a);
       color: white;
       font-weight: 600;
