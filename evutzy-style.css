@@ -23,7 +23,7 @@ body {
 }
 
 .title {
-  font-size: clamp(2rem, 3.2vw, 2.4rem);
+  font-size: clamp(2rem, 4vw, 3rem);
   font-family: "caveat-brush", sans-serif;
   color: #4a2a33;
 }
