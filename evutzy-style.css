@@ -1,0 +1,170 @@
+/* ============================================================
+   Global Style Sheet
+   © 2025 Evutzy. All rights reserved. (www.evutzy.com)
+   Purpose: Shared typography & color theme for Evutzy pages
+   ============================================================ */
+
+/* ---------- Root Variables ---------- */
+:root {
+  --font-body: "Cabin", "Helvetica Neue", Arial, sans-serif;
+  --font-display: "Caveat Brush", cursive;
+
+  --color-bg: #ffd252;
+  --color-text: #3a1c24;
+  --color-accent: #b35d75;
+  --color-light: #fffdf0;
+  --color-border: #ffffff;
+
+  --radius: 20px;
+  --shadow: 6px 6px 14px rgba(0, 0, 0, 0.25);
+}
+
+/* ---------- Reset / Base ---------- */
+html, body {
+  margin: 0;
+  padding: 0;
+  background-color: var(--color-bg);
+  color: var(--color-text);
+  font-family: var(--font-body);
+  font-size: 16px;
+  line-height: 1.6;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  border: 0;
+}
+
+/* ---------- Headings ---------- */
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-display);
+  color: var(--color-text);
+  line-height: 1.2;
+  margin: 0.5em 0;
+  text-wrap: balance;
+}
+
+h1 {
+  font-size: clamp(2.5rem, 6vw, 4.5rem);
+  font-weight: 400;
+}
+
+h2 {
+  font-size: clamp(1.8rem, 4vw, 2.6rem);
+  font-weight: 400;
+}
+
+h3 {
+  font-size: clamp(1.4rem, 3vw, 2rem);
+}
+
+/* ---------- Body Text ---------- */
+p, li, a, button, input, label {
+  font-family: var(--font-body);
+  font-size: 1rem;
+  color: var(--color-text);
+}
+
+p {
+  margin: 0.8em 0;
+}
+
+/* ---------- Links ---------- */
+a {
+  color: var(--color-accent);
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+a:hover {
+  color: #a34e64;
+}
+
+/* ---------- Buttons ---------- */
+button {
+  background: var(--color-accent);
+  color: white;
+  font-weight: 600;
+  padding: 0.6rem 1.4rem;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: all 0.25s ease;
+  font-family: var(--font-body);
+}
+
+button:hover {
+  background: #a34e64;
+  transform: translateY(-2px);
+}
+
+/* ---------- Text Variations ---------- */
+.text-accent {
+  color: var(--color-accent);
+}
+
+.text-light {
+  color: var(--color-light);
+}
+
+.text-center {
+  text-align: center;
+}
+
+.bg-accent {
+  background: var(--color-accent);
+  color: white;
+}
+
+.bg-light {
+  background: var(--color-light);
+}
+
+/* ---------- Containers ---------- */
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+.rounded {
+  border-radius: var(--radius);
+}
+
+.shadow {
+  box-shadow: var(--shadow);
+}
+
+/* ---------- Overlay Box ---------- */
+.overlay-box {
+  background: rgba(255, 255, 240, 0.75);
+  border: 2px solid var(--color-border);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  padding: 1.5rem 2rem;
+  display: inline-block;
+}
+
+/* ---------- Responsive Typography ---------- */
+@media (max-width: 768px) {
+  body {
+    font-size: 15px;
+  }
+
+  h1 {
+    font-size: clamp(2rem, 8vw, 3rem);
+  }
+
+  h2 {
+    font-size: clamp(1.5rem, 5vw, 2rem);
+  }
+
+  .container {
+    width: 92%;
+  }
+}
