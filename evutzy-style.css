@@ -4,168 +4,50 @@
    Purpose: Shared typography & color theme for Evutzy pages
    ============================================================ */
 
-/* ---------- Root Variables ---------- */
-:root {
-  --font-body: "proxima-nova", sans-serif;
-  --font-display: "caveat-brush", sans-serif;
+   body {
+      overflow: hidden;
+      background-color: rgb(255, 217, 101);
+      font-family: "proxima-nova", sans-serif;
+      font-size: clamp(0.8rem, 1vw, 1rem);
+      font-weight: 400;
+      color: #3a1c24;
 
-  --color-bg: #ffd252;
-  --color-text: #3a1c24;
-  --color-accent: #b35d75;
-  --color-light: #fffdf0;
-  --color-border: #ffffff;
+   }
 
-  --radius: 20px;
-  --shadow: 6px 6px 14px rgba(0, 0, 0, 0.25);
-}
+   .title {
+      font-size: clamp(2rem, 3.2vw, 2.4rem);
+      font-family: "caveat-brush", sans-serif;
+      color: #4a2a33;
+   }
 
-/* ---------- Reset / Base ---------- */
-body {
-  margin: 0;
-  padding: 0;
-  background-color: var(--color-bg);
-  color: var(--color-text);
-  font-family: var(--font-body);
-  font-size: 16px;
-  line-height: 1.6;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  overflow: hidden;
-}
+   .subtitle {
+      font-size: clamp(1rem, 1.2vw, 1.2rem);
+      font-weight: 600;
+      color: #5a2f3a;
+      font-weight: 600;
+   }
 
-img {
-  max-width: 100%;
-  height: auto;
-  display: block;
-  border: 0;
-}
 
-/* ---------- Headings ---------- */
-h1, h2, h3, h4, h5, h6 {
-  font-family: var(--font-display);
-  color: var(--color-text);
-  line-height: 1.2;
-  margin: 0.5em 0;
-  text-wrap: balance;
-}
+   .gradient-text {
+      background: linear-gradient(90deg, #b35d75, #ff7f50, #ffd252);
+      background-clip: text;
+      -webkit-background-clip: text;
+      color: transparent;
+      -webkit-text-fill-color: transparent;
+   }
 
-h1 {
-  font-size: clamp(2.5rem, 6vw, 4.5rem);
-  font-weight: 400;
-}
+   button {
+      background: linear-gradient(90deg, #c4637e, #ff9467, #ffd36a);
+      color: white;
+      font-weight: 600;
+   }
 
-h2 {
-  font-size: clamp(1.8rem, 4vw, 2.6rem);
-  font-weight: 400;
-}
 
-h3 {
-  font-size: clamp(1.4rem, 3vw, 2rem);
-}
-
-/* ---------- Body Text ---------- */
-p, li, a, button, input, label {
-  font-family: var(--font-body);
-  font-size: 1rem;
-  color: var(--color-text);
-}
-
-p {
-  margin: 0.8em 0;
-}
-
-/* ---------- Links ---------- */
-a {
-  color: var(--color-accent);
-  text-decoration: none;
-  transition: color 0.2s ease;
-}
-
-a:hover {
-  color: #a34e64;
-}
-
-/* ---------- Buttons ---------- */
-button {
-  background: var(--color-accent);
-  color: white;
-  font-weight: 600;
-  padding: 0.6rem 1.4rem;
-  border: none;
-  border-radius: 25px;
-  cursor: pointer;
-  transition: all 0.25s ease;
-  font-family: var(--font-body);
-}
-
-button:hover {
-  background: #a34e64;
-  transform: translateY(-2px);
-}
-
-/* ---------- Text Variations ---------- */
-.text-accent {
-  color: var(--color-accent);
-}
-
-.text-light {
-  color: var(--color-light);
-}
-
-.text-center {
-  text-align: center;
-}
-
-.bg-accent {
-  background: var(--color-accent);
-  color: white;
-}
-
-.bg-light {
-  background: var(--color-light);
-}
-
-/* ---------- Containers ---------- */
-.container {
-  width: 90%;
-  max-width: 1200px;
-  margin: 0 auto;
-  box-sizing: border-box;
-}
-
-.rounded {
-  border-radius: var(--radius);
-}
-
-.shadow {
-  box-shadow: var(--shadow);
-}
-
-/* ---------- Overlay Box ---------- */
-.overlay-box {
-  background: rgba(255, 255, 240, 0.75);
-  border: 2px solid var(--color-border);
-  border-radius: var(--radius);
-  box-shadow: var(--shadow);
-  padding: 1.5rem 2rem;
-  display: inline-block;
-}
-
-/* ---------- Responsive Typography ---------- */
-@media (max-width: 768px) {
-  body {
-    font-size: 15px;
-  }
-
-  h1 {
-    font-size: clamp(2rem, 8vw, 3rem);
-  }
-
-  h2 {
-    font-size: clamp(1.5rem, 5vw, 2rem);
-  }
-
-  .container {
-    width: 92%;
-  }
-}
+   .loader {
+      border: 6px solid #f3f3f3;
+      border-top: 6px solid #b35d75;
+      border-radius: 50%;
+      width: 60px;
+      height: 60px;
+      animation: spin 1s linear infinite;
+   }
