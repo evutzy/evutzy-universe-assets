@@ -28,9 +28,13 @@ body {
   color: #4a2a33;
 }
 
-.subtitle {
+.subtitle1 {
+  font-size: clamp(1.7rem, 3.5vw, 2.6rem);
+  color: #5a2f3a;
+}
+
+.subtitle2 {
   font-size: clamp(1rem, 1.2vw, 1.2rem);
-  font-weight: 600;
   color: #5a2f3a;
 }
 
