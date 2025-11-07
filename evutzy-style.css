@@ -41,7 +41,7 @@ body {
 }
 
 .button {
-  width: 100px;
+  max-width: 100px;
   text-align: center; 
   background: linear-gradient(90deg, #c4637e, #ff9467, #ffd36a);
   color: #fff;
